@@ -27,7 +27,7 @@ export default function FileUpload() {
       setMessage("");
 
       const response = await axios.post(
-        "http://localhost:3000/api/papers/upload",
+        "http://localhost:3000/api/papers/upload_and_parse",
         formData,
         {
           headers: {
