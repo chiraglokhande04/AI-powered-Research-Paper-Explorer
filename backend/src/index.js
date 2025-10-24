@@ -6,6 +6,12 @@ const paperRoutes = require("./routes/paperRoutes");
 
 const app = express();
 
+app.use((req, res, next) => {
+  console.log(`[${req.method}] ${req.path}`);
+  next();
+});
+
+
 // CORS setup
 app.use(cors({
   origin: "http://localhost:5173", // frontend origin
