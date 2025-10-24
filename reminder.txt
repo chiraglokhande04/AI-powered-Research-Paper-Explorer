@@ -1,0 +1,5 @@
+1 -> pdf parsing done using python script
+2 -> parsed json didnt get stored in db (have to debug this)
+3 -> figures from paper after parsing is storing locally currently (have to fix this)
+
+4 -> need to learn explanation of python script   (first and main priority)
