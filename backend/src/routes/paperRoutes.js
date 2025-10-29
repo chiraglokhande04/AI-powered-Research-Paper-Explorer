@@ -92,6 +92,8 @@ router.post("/upload_and_parse", upload.single("file"), async (req, res) => {
       cloudinary_url: result.secure_url
     });
 
+    console.log("Parsing result:", parseResponse.data);
+
     res.json({
       message: "File uploaded & parsed successfully",
       paper,
